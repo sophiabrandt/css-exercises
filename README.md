@@ -35,7 +35,9 @@ Copyright © 2020 Sophia Brandt
 
 ## Acknowledgments
 
-- Andy Bell & Heydon Pickering
+- Andy Bell
+- Heydon Pickering
+- Simo Edwin
 
 [license-shield]: https://img.shields.io/badge/License-MIT-green.svg?style=flat-square
 [license-url]: https://github.com/sophiabrandt/css-exercises/blob/master/LICENSE

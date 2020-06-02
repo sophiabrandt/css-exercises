@@ -13,6 +13,8 @@
  * VARIABLES
  */
 :root {
+  --color-light: #FFE5D9;
+  --color-dark: #6D6875;
   --metric-gutter: 1.5rem;
   --measure: 60ch;
   --font-base-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -21,6 +23,9 @@
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
+/**
+ * GLOBAL STYLES
+ */
 * {
   max-width: var(--measure);
 }
@@ -34,3 +39,47 @@ main,
 footer {
   max-width: none;
 }
+
+nav li {
+  list-style: none;
+}
+
+/**
+ * BOX
+ */
+.box {
+  padding: var(--metric-gutter);
+  border: var(--border-thin) solid;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.box * {
+  color: inherit;
+}
+
+.box__invert {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+/**
+ * CLUSTER
+ */
+.cluster {
+  --space: 1rem;
+  overflow: hidden;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cluster > * > * {
+  margin: calc(var(--space) / 2);
+}
+  
