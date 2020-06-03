@@ -121,8 +121,9 @@ nav li {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: var(--space);
+  padding: 0;
 }
+
 .cover > * {
   margin-top: var(--space));
   margin-bottom: var(--space));
@@ -149,9 +150,13 @@ nav li {
   background-size: cover;
   background-image: url('./simon-abrams-k_T9Zj3SE8k-unsplash.jpg');
   background-color: var(--color-dark);
-  background-blend-mode: luminosity;
+  background-blend-mode: multiply;
   background-position: center;
   color: var(--color-primary);
+}
+
+.hero h2 {
+  padding-top: calc(var(--space) * 3);
 }
 
 /**
