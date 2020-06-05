@@ -122,10 +122,14 @@ nav li {
   background-image: url('./yogi-purnama-en7G3hTSjBQ-unsplash.jpg');
   background-size: cover;
   background-color: var(--color-dark);
-  background-blend-mode: screen;
+  background-blend-mode: luminosity;
   background-position: center;
   padding: var(--metric-gutter) var(--metric-gutter) var(--metric-gutter)
     calc(var(--metric-gutter) * 10);
+}
+
+.movie > * {
+  color: var(--color-secondary);
 }
 
 /**
