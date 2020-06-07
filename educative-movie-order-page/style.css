@@ -128,7 +128,15 @@ nav li {
     calc(var(--metric-gutter) * 10);
 }
 
-.movie > * {
+.movie__title--span {
+  padding: calc(var(--space) / 6.5) calc(var(--space) / 6.5);
+  background: var(--color-dark);
+  color: var(--color-secondary);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.movie p {
   color: var(--color-secondary);
 }
 
